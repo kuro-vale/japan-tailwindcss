@@ -15,9 +15,23 @@
 </head>
     <nav></nav>
     <div id="tab_bar"></div>
-    <section>
-        <div id="home"></div>
-        <div id="prefectures"></div>
+    <section class="w-full h-screen">
+        <div id="home">
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col absolute space-y-64 py-4 items-center">
+                    <input class="outline-none p-3 rounded-full shadow-sm" type="search" placeholder="Tokyo">
+                    <button class="w-32 rounded-full text-xl text-red-500 font-semibold p-2 shadow-sm bg-white">
+                        Explore
+                    </button>
+                </div>
+                <div class="w-full h-full">
+                    <img src="./images/tokyo.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="p-20" id="prefectures">
+
+        </div>
         <div id="trending"></div>
     </section>
     <footer></footer>
