@@ -468,58 +468,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.m-20 {
-  margin: 5rem;
-}
-
-.flex {
-  display: flex;
-}
-
 .h-96 {
   height: 24rem;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .w-96 {
   width: 24rem;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
-.p-10 {
-  padding: 2.5rem;
+.bg-tokyo {
+  background-image: url('../src/images/tokyo.jpg');
 }
