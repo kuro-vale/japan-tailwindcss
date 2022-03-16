@@ -11,12 +11,10 @@ module.exports = {
         'kyoto': "url('../src/images/kyoto.jpg')",
         'nagano': "url('../src/images/nagano.jpg')",
         'nagasaki': "url('../src/images/nagasaki.jpg')",
-        'nagoya': "url('../src/images/nagoya.jpg')",
         'niigata': "url('../src/images/niigata.jpg')",
         'okayama': "url('../src/images/okayama.jpg')",
         'osaka': "url('../src/images/osaka.jpg')",
         'tokyo': "url('../src/images/tokyo.jpg')",
-        'yokohama': "url('/src/images/yokohama.jpg')",
       }
     },
     fontFamily: {
