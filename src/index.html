@@ -13,83 +13,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Japan Tailwind</title>
 </head>
-<nav></nav>
-<div id="tab_bar"></div>
-<section class="w-auto h-screen">
-    <div class="w-full h-full" id="home">
+
+<body class="font-Montserrat font-light">
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-auto h-screen">
+        <div class="w-full h-full" id="home">
             <div class="w-full h-full bg-tokyo flex flex-col bg-cover p-10 items-center justify-between">
-                <input class="outline-none p-3 rounded-full shadow-sm" type="search" placeholder="Tokyo">
-                <button class="w-32 rounded-full text-xl text-blue-500 font-semibold p-2 shadow-sm bg-white">
+                <input
+                    class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-1 focus:w-11/12"
+                    type="search" placeholder="Tokyo">
+                <button
+                    class="w-48 rounded-full text-lg text-blue-500 font-semibold p-2 shadow-sm bg-white transition duration-500 ease-in-out hover:bg-blue-500 hover:text-white transform hover:translate-y-1 hover:scale-110">
                     Explore
                 </button>
             </div>
-    </div>
-    <div class="p-6" id="prefectures">
-        <p class="text-3xl font-semibold text-blue-500">Prefectures</p>
-        <div class="w-auto h-96 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-akita bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
-                    <p class="text-white font-bold text-xl px-4 py-2">Akita</p>
-                    <p class="text-white px-4">Japan's most interesting samurai districts.</p>
+        </div>
+        <div class="p-6" id="prefectures">
+            <p class="text-3xl font-semibold text-blue-500">Prefectures</p>
+            <div
+                class="w-auto h-96 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-akita bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
+                        <p class="text-white font-bold text-xl px-4 py-2">Akita</p>
+                        <p class="text-white px-4">Japan's most interesting samurai districts.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-chiba bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
-                    <p class="text-black font-bold text-xl px-4 py-2">Chiba</p>
-                    <p class="text-black px-4">Fertile land surrounded by a generous sea.</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-chiba bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-white">
+                        <p class="text-black font-bold text-xl px-4 py-2">Chiba</p>
+                        <p class="text-black px-4">Fertile land surrounded by a generous sea.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-fukushima bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
-                    <p class="text-white font-bold text-xl px-4 py-2">Fukushima</p>
-                    <p class="text-white px-4">Spectacular volcanic landscapes</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-fukushima bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
+                        <p class="text-white font-bold text-xl px-4 py-2">Fukushima</p>
+                        <p class="text-white px-4">Spectacular volcanic landscapes</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-hiroshima bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
-                    <p class="text-black font-bold text-xl px-4 py-2">Hiroshima</p>
-                    <p class="text-black px-4">Torii Gate is one of the prefecture's major tourist attractions.</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-hiroshima bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-white">
+                        <p class="text-black font-bold text-xl px-4 py-2">Hiroshima</p>
+                        <p class="text-black px-4">Has one of the prefecture's major tourist attractions.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-hyogo bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
-                    <p class="text-white font-bold text-xl px-4 py-2">Hyogo</p>
-                    <p class="text-white px-4">Best known hot spring resorts are Arima and Kinosaki.</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-hyogo bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
+                        <p class="text-white font-bold text-xl px-4 py-2">Hyogo</p>
+                        <p class="text-white px-4">Best known hot spring resorts are Arima and Kinosaki.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-nagano bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
-                    <p class="text-white font-bold text-xl px-4 py-2">Nagano</p>
-                    <p class="text-white px-4">Former olympic city famous for its temple.</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-nagasaki bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-white">
+                        <p class="text-black font-bold text-xl px-4 py-2">Nagasaki</p>
+                        <p class="text-black px-4">Attractive port city with a moving history.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-nagasaki bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
-                    <p class="text-black font-bold text-xl px-4 py-2">Nagasaki</p>
-                    <p class="text-black px-4">Attractive port city with a moving history.</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-nagano bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-gray-600">
+                        <p class="text-white font-bold text-xl px-4 py-2">Nagano</p>
+                        <p class="text-white px-4">Former olympic city famous for its temple.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-okayama bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
-                    <p class="text-black font-bold text-xl px-4 py-2">Okayama</p>
-                    <p class="text-black px-4">Kurashiki attracts tourists with its nicely preserved canal area.</p>
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-okayama bg-cover"></div>
+                    <div class="w-full h-2/5 rounded-b-lg bg-white">
+                        <p class="text-black font-bold text-xl px-4 py-2">Okayama</p>
+                        <p class="text-black px-4">Nicely preserved old canal area.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="trending"></div>
-</section>
-<footer></footer>
-
-<body>
+        <div id="trending"></div>
+    </section>
+    <footer></footer>
 
 </body>
 
