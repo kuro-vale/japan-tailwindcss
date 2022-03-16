@@ -16,13 +16,18 @@
 
 <body class="font-Montserrat font-light">
     <nav></nav>
-    <div class="w-full h-screen" id="home">
-        <div class="w-full h-full bg-tokyo flex flex-col bg-cover p-10 items-center justify-between">
+    <div class="w-full h-96 lg:h-screen" id="home">
+        <div
+            class="w-full h-full bg-tokyo flex flex-col bg-cover p-10 items-center justify-between lg:space-y-0 lg:items-start lg:pt-80 lg:justify-start">
             <input
-                class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-1 focus:w-11/12"
+                class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-1 focus:w-11/12 lg:hidden"
                 type="search" placeholder="Tokyo">
+            <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
+                <p class="text-4xl ml-16 font-bold text-white">Tokyo (東京, Tōkyō) is Japan's capital and the world's most
+                    populous metropolis.</p>
+            </div>
             <button
-                class="w-48 rounded-full text-lg text-blue-500 font-semibold p-2 shadow-sm bg-white transition duration-500 ease-in-out hover:bg-blue-500 hover:text-white transform hover:translate-y-1 hover:scale-110">
+                class="w-48 rounded-full text-lg text-blue-500 font-semibold p-2 shadow-sm bg-white transition duration-500 ease-in-out hover:bg-blue-500 hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">
                 Explore
             </button>
         </div>
@@ -90,22 +95,26 @@
         </div>
     </div>
     <div class="p-6" id="trending">
-        <p class="text-3xl text-blue-500 font-semibold pb-6">Trending</p>
-        <div class="w-full h-full flex flex-col space-y-4 items-center justify-center">
-            <div class="w-full h-96 bg-kyoto bg-cover rounded-xl">
+        <p class="text-3xl text-blue-500 font-semibold pb-6 lg:pb-0">Trending</p>
+        <div class="w-full h-full flex flex-col space-y-4 items-center justify-center lg:flex-row space-x-4 lg:p-2">
+            <div class="w-full h-96 bg-kyoto bg-cover rounded-xl bg-center lg:h-screen">
                 <p class="trending-title">Kyoto</p>
-                <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50">For over 1000 years the capital
+                <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">For over 1000 years the capital
                     of Japan.</p>
             </div>
-            <div class="w-full h-96 bg-niigata bg-cover rounded-xl">
-                <p class="trending-title">Niigata</p>
-                <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50">Beautiful coastal and mountainous
-                    sceneries.</p>
-            </div>
-            <div class="w-full h-96 bg-osaka bg-cover rounded-xl">
-                <p class="trending-title">Osaka</p>
-                <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50">Largest city of the Kinki Region.
-                </p>
+            <div class="w-full h-full space-y-4">
+                <div class="w-full h-96 bg-niigata bg-cover rounded-xl bg-center">
+                    <p class="trending-title">Niigata</p>
+                    <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">Beautiful coastal and
+                        mountainous
+                        sceneries.</p>
+                </div>
+                <div class="w-full h-96 bg-osaka bg-cover rounded-xl bg-center">
+                    <p class="trending-title">Osaka</p>
+                    <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">Largest city of the Kinki
+                        Region.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -130,7 +139,7 @@
         <p class="text-sm text-gray-400"><a href="https://www.japan-guide.com/" target="_blank">Visit Japan</a></p>
         <p class="text-sm text-gray-400"><a href="https://github.com/kuro-vale" target="_blank">Github</a></p>
     </footer>
-    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center"
+    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
         id="tab-bar">
         <a href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
