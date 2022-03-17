@@ -15,7 +15,25 @@
 </head>
 
 <body class="font-Montserrat font-light">
-    <nav></nav>
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-50">
+        <div class="h-auto w-auto">
+            <p class="text-xl text-blue-400">Japan Tailwind</p>
+        </div>
+        <div class="flex space-x-8">
+            <a class="font-bold text-blue-400" href="#home">Home</a>
+            <a class="font-bold text-blue-400" href="#prefectures">Prefectures</a>
+            <a class="font-bold text-blue-400" href="#trending">Trending</a>
+            <a class="font-bold text-blue-400" href="#faqs">FAQs</a>
+        </div>
+        <div class="flex">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path class="fill-current text-gray-600"
+                        d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
     <div class="w-full h-96 lg:h-screen" id="home">
         <div
             class="w-full h-full bg-tokyo flex flex-col bg-cover p-10 items-center justify-between lg:space-y-0 lg:items-start lg:pt-80 lg:justify-start">
@@ -27,67 +45,67 @@
                     populous metropolis.</p>
             </div>
             <button
-                class="w-48 rounded-full text-lg text-blue-500 font-semibold p-2 shadow-sm bg-white transition duration-500 ease-in-out hover:bg-blue-500 hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">
+                class="w-48 rounded-full text-lg text-blue-400 font-semibold p-2 shadow-sm bg-white transition duration-500 ease-in-out hover:bg-blue-400 hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">
                 Explore
             </button>
         </div>
     </div>
     <div class="p-6" id="prefectures">
-        <p class="text-3xl font-semibold text-blue-500">Prefectures</p>
+        <p class="text-3xl font-semibold text-blue-400">Prefectures</p>
         <div
             class="w-auto h-96 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-akita bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-600">
+                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
                     <p class="text-white font-bold text-xl px-4 py-2">Akita</p>
                     <p class="text-white px-4">Japan's most interesting samurai districts.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-chiba bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
+                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
                     <p class="text-black font-bold text-xl px-4 py-2">Chiba</p>
                     <p class="text-black px-4">Fertile land surrounded by a generous sea.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-fukushima bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-600">
+                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
                     <p class="text-white font-bold text-xl px-4 py-2">Fukushima</p>
                     <p class="text-white px-4">Spectacular volcanic landscapes</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-hiroshima bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
+                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
                     <p class="text-black font-bold text-xl px-4 py-2">Hiroshima</p>
                     <p class="text-black px-4">Has one of the prefecture's major tourist attractions.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-hyogo bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-600">
+                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
                     <p class="text-white font-bold text-xl px-4 py-2">Hyogo</p>
                     <p class="text-white px-4">Best known hot spring resorts are Arima and Kinosaki.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-nagasaki bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
+                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
                     <p class="text-black font-bold text-xl px-4 py-2">Nagasaki</p>
                     <p class="text-black px-4">Attractive port city with a moving history.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-nagano bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-600">
+                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
                     <p class="text-white font-bold text-xl px-4 py-2">Nagano</p>
                     <p class="text-white px-4">Former olympic city famous for its temple.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-okayama bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-white">
+                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
                     <p class="text-black font-bold text-xl px-4 py-2">Okayama</p>
                     <p class="text-black px-4">Nicely preserved old canal area.</p>
                 </div>
@@ -95,23 +113,26 @@
         </div>
     </div>
     <div class="p-6" id="trending">
-        <p class="text-3xl text-blue-500 font-semibold pb-6 lg:pb-0">Trending</p>
+        <p class="text-3xl text-blue-400 font-semibold pb-6 lg:pb-0">Trending</p>
         <div class="w-full h-full flex flex-col space-y-4 items-center justify-center lg:flex-row space-x-4 lg:p-2">
             <div class="w-full h-96 bg-kyoto bg-cover rounded-xl bg-center lg:h-screen">
                 <p class="trending-title">Kyoto</p>
-                <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">For over 1000 years the capital
+                <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">For over 1000 years
+                    the capital
                     of Japan.</p>
             </div>
             <div class="w-full h-full space-y-4">
                 <div class="w-full h-96 bg-niigata bg-cover rounded-xl bg-center">
                     <p class="trending-title">Niigata</p>
-                    <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">Beautiful coastal and
+                    <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">Beautiful coastal
+                        and
                         mountainous
                         sceneries.</p>
                 </div>
                 <div class="w-full h-96 bg-osaka bg-cover rounded-xl bg-center">
                     <p class="trending-title">Osaka</p>
-                    <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">Largest city of the Kinki
+                    <p class="text-sm pl-8 text-white mr-24 bg-black w-full bg-opacity-50 lg:text-lg">Largest city of
+                        the Kinki
                         Region.
                     </p>
                 </div>
@@ -119,15 +140,15 @@
         </div>
     </div>
     <div class="p-6" id="faqs">
-        <p class="text-3xl text-blue-500 font-semibold mb-6">FAQs</p>
+        <p class="text-3xl text-blue-400 font-semibold mb-6">FAQs</p>
         <div class="w-full h-full flex flex-col space-y-2">
-            <p class="text-xl font-medium text-blue-500">Get started with Tailwind CSS</p>
+            <p class="text-xl font-medium text-blue-400">Get started with Tailwind CSS</p>
             <p class="pt-2">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other
                 templates for class names, generating the corresponding styles and then writing them to a static CSS
                 file.</p>
-            <p class="text-xl font-medium text-blue-500">Install Tailwind CSS</p>
+            <p class="text-xl font-medium text-blue-400">Install Tailwind CSS</p>
             <p class="pt-2">> npm install -D tailwindcss<br>> npx tailwindcss init</p>
-            <p class="text-xl font-medium text-blue-500">Visit Tailwind documentation</p>
+            <p class="text-xl font-medium text-blue-400">Visit Tailwind documentation</p>
             <p class="pt-2">For more info visit <a class="text-blue-600"
                     href="https://tailwindcss.com/docs/installation" target="_blank">Tailwind docs</a></p>
         </div>
