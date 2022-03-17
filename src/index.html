@@ -14,21 +14,21 @@
     <title>Japan Tailwind</title>
 </head>
 
-<body class="font-Montserrat font-light">
-    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-50">
+<body class="font-Montserrat font-light dark:bg-gray-900">
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-50 dark:bg-gray-800">
         <div class="h-auto w-auto">
-            <p class="text-xl text-blue-400">Japan Tailwind</p>
+            <p class="text-xl text-blue-400 dark:text-white">Japan Tailwind</p>
         </div>
         <div class="flex space-x-8">
-            <a class="font-bold text-blue-400" href="#home">Home</a>
-            <a class="font-bold text-blue-400" href="#prefectures">Prefectures</a>
-            <a class="font-bold text-blue-400" href="#trending">Trending</a>
-            <a class="font-bold text-blue-400" href="#faqs">FAQs</a>
+            <a class="navbar-text" href="#home">Home</a>
+            <a class="navbar-text" href="#prefectures">Prefectures</a>
+            <a class="navbar-text" href="#trending">Trending</a>
+            <a class="navbar-text" href="#faqs">FAQs</a>
         </div>
         <div class="flex">
-            <button>
+            <button id="toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path class="fill-current text-gray-600"
+                    <path class="fill-current text-gray-600 dark:text-white"
                         d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z" />
                 </svg>
             </button>
@@ -45,75 +45,75 @@
                     populous metropolis.</p>
             </div>
             <button
-                class="w-48 rounded-full text-lg text-blue-400 font-semibold p-2 shadow-sm bg-white transition duration-500 ease-in-out hover:bg-blue-400 hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">
+                class="w-48 rounded-full text-lg text-blue-400 dark:text-black font-semibold p-2 shadow-sm bg-white transition-all duration-500 ease-in-out hover:bg-blue-400 dark:hover:bg-black hover:text-white transform dark:hover:text-white hover:translate-y-1 hover:scale-110 lg:ml-16">
                 Explore
             </button>
         </div>
     </div>
     <div class="p-6" id="prefectures">
-        <p class="text-3xl font-semibold text-blue-400">Prefectures</p>
+        <p class="text-3xl font-semibold text-blue-400 dark:text-white">Prefectures</p>
         <div
             class="w-auto h-96 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-akita bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
-                    <p class="text-white font-bold text-xl px-4 py-2">Akita</p>
+                <div class="card-image bg-akita"></div>
+                <div class="card-backgroud-even">
+                    <p class="card-title-even">Akita</p>
                     <p class="text-white px-4">Japan's most interesting samurai districts.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-chiba bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
-                    <p class="text-black font-bold text-xl px-4 py-2">Chiba</p>
+                <div class="card-image bg-chiba"></div>
+                <div class="card-backgroud-odd">
+                    <p class="card-title-odd">Chiba</p>
                     <p class="text-black px-4">Fertile land surrounded by a generous sea.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-fukushima bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
-                    <p class="text-white font-bold text-xl px-4 py-2">Fukushima</p>
+                <div class="card-image bg-fukushima"></div>
+                <div class="card-backgroud-even">
+                    <p class="card-title-even">Fukushima</p>
                     <p class="text-white px-4">Spectacular volcanic landscapes</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-hiroshima bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
-                    <p class="text-black font-bold text-xl px-4 py-2">Hiroshima</p>
+                <div class="card-image bg-hiroshima"></div>
+                <div class="card-backgroud-odd">
+                    <p class="card-title-odd">Hiroshima</p>
                     <p class="text-black px-4">Has one of the prefecture's major tourist attractions.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-hyogo bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
-                    <p class="text-white font-bold text-xl px-4 py-2">Hyogo</p>
+                <div class="card-image bg-hyogo"></div>
+                <div class="card-backgroud-even">
+                    <p class="card-title-even">Hyogo</p>
                     <p class="text-white px-4">Best known hot spring resorts are Arima and Kinosaki.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-nagasaki bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
-                    <p class="text-black font-bold text-xl px-4 py-2">Nagasaki</p>
+                <div class="card-image bg-nagasaki"></div>
+                <div class="card-backgroud-odd">
+                    <p class="card-title-odd">Nagasaki</p>
                     <p class="text-black px-4">Attractive port city with a moving history.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-nagano bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-red-400">
-                    <p class="text-white font-bold text-xl px-4 py-2">Nagano</p>
+                <div class="card-image bg-nagano"></div>
+                <div class="card-backgroud-even">
+                    <p class="card-title-even">Nagano</p>
                     <p class="text-white px-4">Former olympic city famous for its temple.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="w-full h-3/5 rounded-t-lg bg-okayama bg-cover"></div>
-                <div class="w-full h-2/5 rounded-b-lg bg-blue-400">
-                    <p class="text-black font-bold text-xl px-4 py-2">Okayama</p>
+                <div class="card-image bg-okayama"></div>
+                <div class="card-backgroud-odd">
+                    <p class="card-title-odd">Okayama</p>
                     <p class="text-black px-4">Nicely preserved old canal area.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="p-6" id="trending">
-        <p class="text-3xl text-blue-400 font-semibold pb-6 lg:pb-0">Trending</p>
+        <p class="text-3xl text-blue-400 font-semibold pb-6 lg:pb-0 dark:text-white">Trending</p>
         <div class="w-full h-full flex flex-col space-y-4 items-center justify-center lg:flex-row space-x-4 lg:p-2">
             <div class="w-full h-96 bg-kyoto bg-cover rounded-xl bg-center lg:h-screen">
                 <p class="trending-title">Kyoto</p>
@@ -140,52 +140,64 @@
         </div>
     </div>
     <div class="p-6" id="faqs">
-        <p class="text-3xl text-blue-400 font-semibold mb-6">FAQs</p>
+        <p class="text-3xl text-blue-400 font-semibold mb-6 dark:text-white">FAQs</p>
         <div class="w-full h-full flex flex-col space-y-2">
-            <p class="text-xl font-medium text-blue-400">Get started with Tailwind CSS</p>
-            <p class="pt-2">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other
+            <p class="faq-title">Get started with Tailwind CSS</p>
+            <p class="faq-text">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any
+                other
                 templates for class names, generating the corresponding styles and then writing them to a static CSS
                 file.</p>
-            <p class="text-xl font-medium text-blue-400">Install Tailwind CSS</p>
-            <p class="pt-2">> npm install -D tailwindcss<br>> npx tailwindcss init</p>
-            <p class="text-xl font-medium text-blue-400">Visit Tailwind documentation</p>
-            <p class="pt-2">For more info visit <a class="text-blue-600"
+            <p class="faq-title">Install Tailwind CSS</p>
+            <p class="faq-text">> npm install -D tailwindcss<br>> npx tailwindcss init</p>
+            <p class="faq-title">Visit Tailwind documentation</p>
+            <p class="faq-text">For more info visit <a class="text-blue-600"
                     href="https://tailwindcss.com/docs/installation" target="_blank">Tailwind docs</a></p>
         </div>
     </div>
-    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 mb-7">
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 mb-6">
         <p class="text-lg">About</p>
         <p class="text-sm text-gray-400"><a href="https://tailwindcss.com/" target="_blank">Tailwind</a></p>
         <p class="text-sm text-gray-400"><a href="#prefectures">Prefectures</a></p>
         <p class="text-sm text-gray-400"><a href="https://www.japan-guide.com/" target="_blank">Visit Japan</a></p>
         <p class="text-sm text-gray-400"><a href="https://github.com/kuro-vale" target="_blank">Github</a></p>
     </footer>
-    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
+    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden dark:bg-black"
         id="tab-bar">
         <a href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
+                <path class="fill-current dark:text-white"
+                    d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
             </svg>
         </a>
         <a href="#prefectures">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path
+                <path class="fill-current dark:text-white"
                     d="M17.492 15.432c-.433 0-.855-.087-1.253-.259l.467-1.082c.25.107.514.162.786.162.222 0 .441-.037.651-.11l.388 1.112c-.334.118-.683.177-1.039.177zm-10.922-.022c-.373 0-.741-.066-1.093-.195l.407-1.105c.221.081.451.122.686.122.26 0 .514-.05.754-.148l.447 1.09c-.382.157-.786.236-1.201.236zm8.67-.783l-1.659-.945.583-1.024 1.66.945-.584 1.024zm-6.455-.02l-.605-1.011 1.639-.981.605 1.011-1.639.981zm3.918-1.408c-.243-.101-.5-.153-.764-.153-.23 0-.457.04-.674.119l-.401-1.108c.346-.125.708-.188 1.075-.188.42 0 .83.082 1.217.244l-.453 1.086zm7.327-.163c-.534 0-.968.433-.968.968 0 .535.434.968.968.968.535 0 .969-.434.969-.968 0-.535-.434-.968-.969-.968zm-16.061 0c-.535 0-.969.433-.969.968 0 .535.434.968.969.968s.969-.434.969-.968c0-.535-.434-.968-.969-.968zm18.031-.832v6.683l-4 2.479v-4.366h-1v4.141l-4-2.885v-3.256h-2v3.255l-4 2.885v-4.14h-1v4.365l-4-2.479v-13.294l4 2.479v3.929h1v-3.927l4-2.886v4.813h2v-4.813l1.577 1.138c-.339-.701-.577-1.518-.577-2.524l.019-.345-2.019-1.456-5.545 4-6.455-4v18l6.455 4 5.545-4 5.545 4 6.455-4v-11.618l-.039.047c-.831.982-1.614 1.918-1.961 3.775zm2-8.403c0-2.099-1.9-3.801-4-3.801s-4 1.702-4 3.801c0 3.121 3.188 3.451 4 8.199.812-4.748 4-5.078 4-8.199zm-5.5.199c0-.829.672-1.5 1.5-1.5s1.5.671 1.5 1.5-.672 1.5-1.5 1.5-1.5-.671-1.5-1.5zm-.548 8c-.212-.992-.547-1.724-.952-2.334v2.334h.952z" />
             </svg>
         </a>
         <a href="#trending">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                <path
+                <path class="fill-current dark:text-white"
                     d="M8.625 0c.61 7.189-5.625 9.664-5.625 15.996 0 4.301 3.069 7.972 9 8.004 5.931.032 9-4.414 9-8.956 0-4.141-2.062-8.046-5.952-10.474.924 2.607-.306 4.988-1.501 5.808.07-3.337-1.125-8.289-4.922-10.378zm4.711 13c3.755 3.989 1.449 9-1.567 9-1.835 0-2.779-1.265-2.769-2.577.019-2.433 2.737-2.435 4.336-6.423z" />
             </svg>
         </a>
-        <button>
+        <button id="toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path
+                <path class="fill-current dark:text-white"
                     d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z" />
             </svg>
         </button>
     </div>
+
+    <script>
+        const htmlElement = document.querySelector('html');
+        const toggleButton = document.querySelectorAll('#toggle');
+        toggleButton.forEach(item => {
+            item.addEventListener('click', () => {
+                htmlElement.classList.toggle('dark');
+            });
+        });
+    </script>
 </body>
 
 </html>
